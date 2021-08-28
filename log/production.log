@@ -1,0 +1,26 @@
+I, [2021-08-26T12:45:55.567087 #2683]  INFO -- : [032619a7-5bda-469d-b737-df557cb94984] Started GET "/" for 127.0.0.1 at 2021-08-26 12:45:55 +0300
+I, [2021-08-26T12:45:55.572570 #2683]  INFO -- : [032619a7-5bda-469d-b737-df557cb94984] Processing by ArticlesController#index as HTML
+I, [2021-08-26T12:45:55.803940 #2683]  INFO -- : [032619a7-5bda-469d-b737-df557cb94984]   Rendered articles/index.html.erb within layouts/application (Duration: 132.8ms | Allocations: 1147)
+I, [2021-08-26T12:45:55.804218 #2683]  INFO -- : [032619a7-5bda-469d-b737-df557cb94984]   Rendered layout layouts/application.html.erb (Duration: 133.5ms | Allocations: 1183)
+I, [2021-08-26T12:45:55.821991 #2683]  INFO -- : [032619a7-5bda-469d-b737-df557cb94984] Completed 500 Internal Server Error in 249ms (ActiveRecord: 34.4ms | Allocations: 2518)
+F, [2021-08-26T12:45:55.836226 #2683] FATAL -- : [032619a7-5bda-469d-b737-df557cb94984]   
+[032619a7-5bda-469d-b737-df557cb94984] ActionView::Template::Error (SQLite3::SQLException: no such table: articles):
+[032619a7-5bda-469d-b737-df557cb94984]     1: <h1>Articles</h1>
+[032619a7-5bda-469d-b737-df557cb94984]     2: 
+[032619a7-5bda-469d-b737-df557cb94984]     3: <ul>
+[032619a7-5bda-469d-b737-df557cb94984]     4:   <% @articles.each do |article| %>
+[032619a7-5bda-469d-b737-df557cb94984]     5:     <li>
+[032619a7-5bda-469d-b737-df557cb94984]     6:       <%= link_to article.title, article %>
+[032619a7-5bda-469d-b737-df557cb94984]     7:     </li>
+[032619a7-5bda-469d-b737-df557cb94984]   
+[032619a7-5bda-469d-b737-df557cb94984] app/views/articles/index.html.erb:4
+I, [2021-08-26T12:45:57.070911 #2683]  INFO -- : [b5548e9c-0640-4f83-aa4a-294df1649921] Started GET "/favicon.ico" for 127.0.0.1 at 2021-08-26 12:45:57 +0300
+I, [2021-08-26T12:45:57.076411 #2683]  INFO -- : [b5548e9c-0640-4f83-aa4a-294df1649921] Processing by ApplicationController#route_not_found as */*
+I, [2021-08-26T12:45:57.088878 #2683]  INFO -- : [b5548e9c-0640-4f83-aa4a-294df1649921]   Parameters: {"unmatched"=>"favicon"}
+I, [2021-08-26T12:45:57.091686 #2683]  INFO -- : [b5548e9c-0640-4f83-aa4a-294df1649921]   Rendered public/404.html (Duration: 0.3ms | Allocations: 4)
+I, [2021-08-26T12:45:57.105689 #2683]  INFO -- : [b5548e9c-0640-4f83-aa4a-294df1649921] Completed 404 Not Found in 17ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 402)
+I, [2021-08-26T12:46:05.983135 #2683]  INFO -- : [6e41448e-ea40-40c6-821e-485484399d9a] Started GET "/articles/21" for 127.0.0.1 at 2021-08-26 12:46:05 +0300
+I, [2021-08-26T12:46:05.996885 #2683]  INFO -- : [6e41448e-ea40-40c6-821e-485484399d9a] Processing by ApplicationController#route_not_found as HTML
+I, [2021-08-26T12:46:05.997052 #2683]  INFO -- : [6e41448e-ea40-40c6-821e-485484399d9a]   Parameters: {"unmatched"=>"articles/21"}
+I, [2021-08-26T12:46:06.010943 #2683]  INFO -- : [6e41448e-ea40-40c6-821e-485484399d9a]   Rendered public/404.html (Duration: 9.7ms | Allocations: 4)
+I, [2021-08-26T12:46:06.011483 #2683]  INFO -- : [6e41448e-ea40-40c6-821e-485484399d9a] Completed 404 Not Found in 14ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 869)
